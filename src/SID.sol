@@ -38,7 +38,7 @@ contract SID is ERC20 {
         address to,
         uint256 value
     ) internal virtual override {
-        uint256 fee = value / 10;
+        uint256 fee = value / 100;
 
         // Transfers the remaing amount (after deducting the fee) to the recipient's account
         super._transfer(from, to, value - fee);
