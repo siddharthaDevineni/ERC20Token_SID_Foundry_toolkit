@@ -52,6 +52,6 @@ contract SID is ERC20 {
      * @param value, amount to deposit
      */
     function deposit(uint256 value) external payable virtual {
-        _mint(msg.sender, value * 10 ** uint(decimals()));
+        _mint(msg.sender, value);
     }
 }
