@@ -30,7 +30,7 @@ contract TransferTokenTest is BaseSetup {
         assertEq(balanceOf(alice), 90e18); // leftover balance of Alice
         assertEq(balanceOf(bob), 9e18); // new balance of Bob
 
-        assertEq(balanceOf(address(this)), 1e18); // 1% transfer fee to the token contract
+        assertEq(this.contractBalance(), 1e18); // 1% transfer fee to the token contract
     }
 
     function testRevertOnNotEnoughBalance() public {
