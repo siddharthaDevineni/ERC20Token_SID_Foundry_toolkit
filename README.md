@@ -1,4 +1,4 @@
-# ERC20Token_SID_forge_toolkit
+# ERC20Token_SID_Foundry_toolkit
 
 This project demonstrates the implementation, deployment and testing of a token named Sid which is a standard ERC20 token. Deployment and testing are done using Foundry toolkit.
 
